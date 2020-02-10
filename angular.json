@@ -9,6 +9,11 @@
       "root": "projects/geolud-client",
       "sourceRoot": "projects/geolud-client/src",
       "prefix": "app",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -19,14 +24,8 @@
             "polyfills": "projects/geolud-client/src/polyfills.ts",
             "tsConfig": "projects/geolud-client/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "projects/geolud-client/src/favicon.ico",
-              "projects/geolud-client/src/assets"
-            ],
-            "styles": [
-              "projects/geolud-client/src/custom-theme.scss",
-              "projects/geolud-client/src/styles.css"
-            ],
+            "assets": ["projects/geolud-client/src/favicon.ico", "projects/geolud-client/src/assets"],
+            "styles": ["projects/geolud-client/src/custom-theme.scss", "projects/geolud-client/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -84,13 +83,8 @@
             "polyfills": "projects/geolud-client/src/polyfills.ts",
             "tsConfig": "projects/geolud-client/tsconfig.spec.json",
             "karmaConfig": "projects/geolud-client/karma.conf.js",
-            "assets": [
-              "projects/geolud-client/src/favicon.ico",
-              "projects/geolud-client/src/assets"
-            ],
-            "styles": [
-              "projects/geolud-client/src/styles.css"
-            ],
+            "assets": ["projects/geolud-client/src/favicon.ico", "projects/geolud-client/src/assets"],
+            "styles": ["projects/geolud-client/src/styles.scss"],
             "scripts": []
           }
         },
@@ -102,9 +96,7 @@
               "projects/geolud-client/tsconfig.spec.json",
               "projects/geolud-client/e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {

@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  navigationItems = [
+    { link: 'home', label: 'Home', icon: 'monetization_on' },
+    { link: 'home', label: 'Home', icon: 'monetization_on' },
+    { link: 'home', label: 'Home', icon: 'monetization_on' },
+    { link: 'home', label: 'Home', icon: 'monetization_on' },
+    { link: 'home', label: 'Home', icon: 'monetization_on' },
+    { link: 'home', label: 'Home', icon: 'monetization_on' },
+    { link: 'home', label: 'Home', icon: 'monetization_on' },
+  ];
   title = 'geolud-client';
 }

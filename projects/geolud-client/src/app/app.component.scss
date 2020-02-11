@@ -1,0 +1,33 @@
+.sidenav-container {
+  min-height: 100vh;
+  .sidenav {
+    width: 200px;
+    .mat-toolbar {
+      background: inherit;
+    }
+  }
+  .sidenav-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+    .main {
+      flex: 1; // child will set to an equal size inside the container
+      display: flex;
+      flex-direction: column;
+
+      // Select all direct descendants only of the <main> element
+      // that are not <router-outlet> elements:
+      > *:not(router-outlet) {
+        flex: 1; // child will set to an equal size inside the container
+        display: block;
+      }
+    }
+    .footer {
+    }
+  }
+}

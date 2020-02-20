@@ -7,13 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   navigationItems = [
-    { link: 'home', label: 'Home', icon: 'monetization_on' },
-    { link: 'home', label: 'Home', icon: 'monetization_on' },
-    { link: 'home', label: 'Home', icon: 'monetization_on' },
-    { link: 'home', label: 'Home', icon: 'monetization_on' },
-    { link: 'home', label: 'Home', icon: 'monetization_on' },
-    { link: 'home', label: 'Home', icon: 'monetization_on' },
-    { link: 'home', label: 'Home', icon: 'monetization_on' },
+    { link: 'home', label: 'Home' },
+    { link: 'resume', label: 'Resume' },
+    { link: 'projects', label: 'Projects' },
+    { link: 'chat', label: 'Chat' },
+    { link: 'contact', label: 'Contact' },
   ];
-  title = 'geolud-client';
 }

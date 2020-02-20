@@ -1,3 +1,5 @@
+@import '../custom-theme';
+
 .sidenav-container {
   min-height: 100vh;
   .sidenav {
@@ -28,6 +30,7 @@
       }
     }
     .footer {
+      background-color: mat-color($app-primary, 500);
     }
   }
 }

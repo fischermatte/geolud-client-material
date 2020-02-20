@@ -21,6 +21,7 @@
       flex: 1; // child will set to an equal size inside the container
       display: flex;
       flex-direction: column;
+      padding: 0 16px;
 
       // Select all direct descendants only of the <main> element
       // that are not <router-outlet> elements:

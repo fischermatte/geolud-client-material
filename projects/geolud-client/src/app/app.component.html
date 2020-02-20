@@ -41,7 +41,11 @@
       </mat-toolbar-row>
     </mat-toolbar>
     <main class="main">
-      <router-outlet></router-outlet>
+      <div fxLayout="row" fxLayoutAlign="center start">
+        <div fxFlex="80">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
     </main>
 
     <mat-toolbar class="footer" color="primary">

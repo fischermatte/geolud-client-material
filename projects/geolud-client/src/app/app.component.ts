@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   navigationItems = [
-    { link: 'home', label: 'Home' },
+    { link: 'home', label: 'About Me' },
     { link: 'resume', label: 'Resume' },
     { link: 'projects', label: 'Projects' },
     { link: 'chat', label: 'Chat' },
